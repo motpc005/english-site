@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC Part 5 - Incomplete Sentences</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/navigation.js}" defer></script>
+</head>
+<body>
+
+    <!-- Main Website Navigation -->
+    <div th:replace="~{fragments/header :: userHeader}"></div>
+
+    <!-- TOEIC Part Navigation -->
+    <div th:replace="~{fragments/toeicHeader :: toeicHeader}"></div>
+
+
+    <!-- Page Introduction -->
+    <header class="toeic-page-header">
+
+        <p class="page-label">TOEIC LISTENING & READING</p>
+
+        <h1>Part 5 – Incomplete Sentences</h1>
+
+        <p>
+            Part 5 tests your knowledge of English grammar and vocabulary.
+            Learn to recognize different question types, identify clues
+            in each sentence, and choose the answer that best fits the context.
+        </p>
+
+        <div class="part-information">
+            <div class="part-information-item">
+                <strong>30</strong>
+                <span>Questions</span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="toeic-page">
+
+        <!-- Question Types -->
+        <section class="question-types-section">
+
+            <div class="section-heading">
+                <h2>Question Types</h2>
+                <p>
+                    Explore the different types of questions commonly
+                    found in Part 5.
+                </p>
+            </div>
+
+
+            <!-- Word Form -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Word Form</h3>
+
+                    <p>
+                        Learn how to recognize and choose the correct
+                        form of a word based on its grammatical role.
+                    </p>
+
+                    <p class="question-pattern">
+                        Different forms of the same word
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Verb Form -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Verb Form</h3>
+
+                    <p>
+                        Understand verb tenses, forms, voice and
+                        subject–verb agreement.
+                    </p>
+
+                    <p class="question-pattern">
+                        Different forms of a verb
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Function Words -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Function Words</h3>
+
+                    <p>
+                        Learn how prepositions, conjunctions,
+                        pronouns and other grammatical words
+                        connect and complete sentences.
+                    </p>
+
+                    <p class="question-pattern">
+                        Different grammatical words
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Vocabulary -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Vocabulary</h3>
+
+                    <p>
+                        Develop your understanding of word meanings,
+                        collocations and choosing appropriate words
+                        based on context.
+                    </p>
+
+                    <p class="question-pattern">
+                        Different words with related or contrasting meanings
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Related Topics -->
+        <section class="related-topics-section">
+
+            <div class="section-heading">
+                <h2>Explore Related Topics</h2>
+
+                <p>
+                    Explore related grammar and vocabulary topics
+                    to expand your understanding of the language
+                    used in Part 5.
+                </p>
+            </div>
+
+            <div class="related-topic-links">
+
+                <div class="related-topic-card">
+                    <h3>Grammar</h3>
+
+                    <p>
+                        Parts of speech, verb tenses, prepositions,
+                        conjunctions and sentence structure.
+                    </p>
+
+                    <a href="/grammar">Explore Grammar</a>
+                </div>
+
+
+                <div class="related-topic-card">
+                    <h3>Vocabulary</h3>
+
+                    <p>
+                        Word families, collocations and commonly
+                        confused words.
+                    </p>
+
+                    <a href="/vocabulary">Explore Vocabulary</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Practice -->
+        <section class="practice-section">
+
+            <div class="section-heading">
+                <h2>Practice Part 5</h2>
+
+                <p>
+                    Apply what you have learned through
+                    TOEIC-style practice questions.
+                </p>
+            </div>
+
+            <div class="coming-soon">
+                <h3>Practice Materials Coming Soon</h3>
+
+                <p>
+                    Practice questions and detailed explanations
+                    will be available here in a future update.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

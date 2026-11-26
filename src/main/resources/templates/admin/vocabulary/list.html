@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vocabulary</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+	
+	<div th:replace="~{fragments/adminHeader :: adminHeader}"></div>
+	
+	<header>
+		<h1>Vocabulary</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Available Categories</h2>
+
+			<p th:if="${#lists.isEmpty(categories)}">Coming soon!</p>
+
+			<div th:each="category : ${categories}">
+				<h3>Category Name: <span th:text="${category.name}">Category Name</span></h3>
+				<p>Category Description: <span th:text="${category.description}">Category Description</span></p>
+				<p>Display Order: <span th:text="${category.displayOrder}">0</span></p>
+
+				<form th:action="@{/admin/vocabulary/categories/{id}/delete(id=${category.id})}" method="post"
+					onsubmit="return confirm('Are you sure you want to delete this category?');">
+					<button type="submit">Delete</button>
+				</form>
+
+				<br>
+				<a class="button" th:href="@{/admin/vocabulary/categories/{id}/edit(id=${category.id})}">Edit</a>
+			</div>
+		</section>
+
+		<section>
+			<h2>Create New Category</h2>
+
+			<form th:action="@{/admin/vocabulary/categories}" method="post">
+				<div>
+					<label for="name">Category Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+
+				<div>
+					<label for="description">Description</label>
+					<textarea id="description" name="description"></textarea>
+				</div>
+
+				<div>
+					<label for="displayOrder">Display Order:</label>
+					<input type="number" id="displayOrder" name="displayOrder">
+				</div>
+
+				<button type="submit">Create Category</button>
+			</form>
+		</section>
+	</main>
+</body>
+
+</html>

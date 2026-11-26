@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>English Learning</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<script th:src="@{/js/navigation.js}" defer></script>
+</head>
+<body>
+	
+	<div th:replace="~{fragments/header :: userHeader}"></div>
+
+    <header>
+        <h1>English Learning</h1>
+        <p>English learning resources designed to develop practical language skills.</p>
+    </header>
+
+    <main class="home-page">
+        <h2>Explore English Resources</h2>
+
+        <section>
+            <h3>TOEIC</h3>
+            <p>Prepare for the TOEIC Listening & Reading Test.</p>
+            <a href="/toeic">Explore TOEIC</a>
+        </section>
+
+        <section>
+            <h3>Vocabulary</h3>
+            <p>Develop your vocabulary through structured explanations and practical examples.</p>
+            <a href="/vocabulary">Explore Vocabulary</a>
+        </section>
+
+        <section>
+            <h3>Grammar</h3>
+            <p>Understand English grammar through clear explanations and examples.</p>
+            <a href="/grammar">Explore Grammar</a>
+        </section>
+
+        <section>
+            <h3>Pronunciation</h3>
+            <p>Improve your listening skills by practicing natural English pronunciation and linking.</p>
+            <a href="/linking">Explore Pronunciation</a>
+        </section>
+    </main>
+
+</body>
+</html>

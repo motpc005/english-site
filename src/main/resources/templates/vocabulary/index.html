@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocabulary</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<script th:src="@{/js/navigation.js}" defer></script>
+</head>
+<body>
+	
+	<div th:replace="~{fragments/header :: userHeader}"></div>
+
+    <header>
+        <h1>Vocabulary</h1>
+        <p>Explore English vocabulary through explanations and practical examples.</p>
+    </header>
+
+
+	<main class="vocabulary-page">
+
+	    <!-- Left Panel: Vocabulary Navigation -->
+	    <aside class="vocabulary-sidebar">
+
+	        <h2>Browse Vocabulary</h2>
+
+	        <h3>By Situation</h3>
+
+	        <nav class="vocabulary-topic-nav">
+	            <a href="#">Meetings & Discussions</a>
+	            <a href="#">Recruitment & Employment</a>
+	            <a href="#">Business Travel</a>
+	            <a href="#">Office Administration</a>
+	            <a href="#">Purchasing & Sales</a>
+	            <a href="#">Finance & Accounting</a>
+	            <a href="#">Customer Service</a>
+	            <a href="#">Marketing & Events</a>
+	        </nav>
+
+	        <h3>Word Building</h3>
+
+	        <nav class="vocabulary-topic-nav">
+	            <a href="#">Word Families</a>
+	        </nav>
+
+	    </aside>
+
+
+	    <!-- Center Panel: Vocabulary List -->
+	    <section class="vocabulary-list-panel">
+
+	        <h2>Vocabulary</h2>
+
+	        <input
+	            type="text"
+	            placeholder="Search vocabulary..."
+	            class="vocabulary-search"
+	        >
+
+	        <div class="vocabulary-filters">
+	            <button type="button">All</button>
+	            <button type="button">Very Frequent</button>
+	            <button type="button">Common</button>
+	            <button type="button">Less Common</button>
+	        </div>
+
+	        <div class="vocabulary-word-list">
+
+	            <a href="#" class="vocabulary-word-item">
+	                <strong>Arrange</strong>
+	                <span>手配する、準備する</span>
+	            </a>
+
+	            <a href="#" class="vocabulary-word-item">
+	                <strong>Confirm</strong>
+	                <span>確認する</span>
+	            </a>
+
+	            <a href="#" class="vocabulary-word-item">
+	                <strong>Postpone</strong>
+	                <span>延期する</span>
+	            </a>
+
+	            <a href="#" class="vocabulary-word-item">
+	                <strong>Venue</strong>
+	                <span>会場</span>
+	            </a>
+
+	            <a href="#" class="vocabulary-word-item">
+	                <strong>Itinerary</strong>
+	                <span>旅程</span>
+	            </a>
+
+	        </div>
+
+	    </section>
+
+
+	    <!-- Right Panel: Word Details -->
+	    <section class="vocabulary-detail-panel">
+
+	        <h2>Arrange</h2>
+
+	        <span class="vocabulary-frequency">Very Frequent</span>
+
+	        <p class="vocabulary-part-of-speech">Verb</p>
+
+	        <p class="vocabulary-meaning">
+	            手配する、準備する
+	        </p>
+
+	        <div class="vocabulary-detail-section">
+
+	            <h3>Definition</h3>
+
+	            <p>To organize or plan something.</p>
+
+	        </div>
+
+	        <div class="vocabulary-detail-section">
+
+	            <h3>Example</h3>
+
+	            <p>We need to arrange a meeting with the client.</p>
+
+	            <p>顧客との会議を手配する必要があります。</p>
+
+	        </div>
+
+	        <div class="vocabulary-detail-section">
+
+	            <h3>Synonyms</h3>
+
+	            <p>Organize · Schedule</p>
+
+	        </div>
+
+	        <div class="vocabulary-detail-section">
+
+	            <h3>Collocations</h3>
+
+	            <p>Arrange a meeting · Arrange transportation</p>
+
+	        </div>
+
+	        <div class="vocabulary-detail-section">
+
+	            <h3>Usage Notes</h3>
+
+	            <p>Arrange is commonly used when organizing events, meetings or practical matters.</p>
+
+	        </div>
+
+	    </section>
+
+	</main>
+
+
+</body>
+</html>

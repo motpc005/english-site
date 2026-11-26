@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC Part 1 - Photographs</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/navigation.js}" defer></script>
+</head>
+<body>
+
+    <!-- Main Website Navigation -->
+    <div th:replace="~{fragments/header :: userHeader}"></div>
+
+    <!-- TOEIC Part Navigation -->
+    <div th:replace="~{fragments/toeicHeader :: toeicHeader}"></div>
+
+
+    <!-- Page Introduction -->
+    <header class="toeic-page-header">
+
+        <p class="page-label">TOEIC LISTENING & READING</p>
+
+        <h1>Part 1 – Photographs</h1>
+
+        <p>
+            Part 1 tests your ability to understand spoken descriptions
+            of photographs. Learn to recognize people's actions,
+            describe objects and surroundings, and identify accurate
+            descriptions of what is shown in a photograph.
+        </p>
+
+        <div class="part-information">
+            <div class="part-information-item">
+                <strong>6</strong>
+                <span>Questions</span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="toeic-page">
+
+        <!-- Photo Types -->
+        <section class="question-types-section">
+
+            <div class="section-heading">
+                <h2>Photo Types</h2>
+                <p>
+                    Learn to recognize the different subjects and
+                    details commonly described in TOEIC photographs.
+                </p>
+            </div>
+
+
+            <!-- One Person -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>One Person</h3>
+
+                    <p>
+                        Learn how to describe an individual's
+                        activities, appearance, clothing and
+                        movements shown in a photograph.
+                    </p>
+
+                    <p class="question-pattern">
+                        Actions, clothing, posture and appearance
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Two or More People -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Two or More People</h3>
+
+                    <p>
+                        Understand descriptions of group activities,
+                        interactions and the actions or positions
+                        of different people in a photograph.
+                    </p>
+
+                    <p class="question-pattern">
+                        Group activities, interactions and positions
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Objects and Scenery -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Objects and Scenery</h3>
+
+                    <p>
+                        Develop your ability to describe objects,
+                        their locations, arrangements and conditions,
+                        as well as the surroundings shown in a photograph.
+                    </p>
+
+                    <p class="question-pattern">
+                        Objects, positions, arrangements and surroundings
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- People and Objects -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>People and Objects</h3>
+
+                    <p>
+                        Understand descriptions involving both people
+                        and objects, including how people interact
+                        with or use things around them.
+                    </p>
+
+                    <p class="question-pattern">
+                        Actions involving objects and surroundings
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Related Topics -->
+        <section class="related-topics-section">
+
+            <div class="section-heading">
+                <h2>Explore Related Topics</h2>
+
+                <p>
+                    Explore related grammar, vocabulary and
+                    pronunciation topics to improve your
+                    understanding of photograph descriptions.
+                </p>
+            </div>
+
+            <div class="related-topic-links">
+
+                <div class="related-topic-card">
+                    <h3>Grammar</h3>
+
+                    <p>
+                        Verb forms, present progressive, passive voice
+                        and prepositions of place.
+                    </p>
+
+                    <a href="/grammar">Explore Grammar</a>
+                </div>
+
+
+                <div class="related-topic-card">
+                    <h3>Vocabulary</h3>
+
+                    <p>
+                        Action verbs, common objects, workplace
+                        vocabulary and descriptive expressions.
+                    </p>
+
+                    <a href="/vocabulary">Explore Vocabulary</a>
+                </div>
+
+
+                <div class="related-topic-card">
+                    <h3>Pronunciation / Natural Linking</h3>
+
+                    <p>
+                        Understand connected speech, reduced
+                        expressions and natural pronunciation
+                        in short spoken descriptions.
+                    </p>
+
+                    <a href="/linking">Explore Pronunciation</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Practice -->
+        <section class="practice-section">
+
+            <div class="section-heading">
+                <h2>Practice Part 1</h2>
+
+                <p>
+                    Apply what you have learned through
+                    TOEIC-style photograph-based listening questions.
+                </p>
+            </div>
+
+            <div class="coming-soon">
+                <h3>Practice Materials Coming Soon</h3>
+
+                <p>
+                    Photograph-based listening questions and
+                    detailed explanations will be available here
+                    in a future update.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

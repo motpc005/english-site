@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TOEIC</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<script th:src="@{/js/navigation.js}" defer></script>
+</head>
+<body>
+	
+	<div th:replace="~{fragments/header :: userHeader}"></div>
+
+    <header>
+        <h1>TOEIC Listening & Reading</h1>
+        <p>Study materials and resources for each part of the TOEIC test.</p>
+    </header>
+
+    <main class="toeic-overview">
+        <h2>Explore TOEIC Parts</h2>
+
+        <section>
+            <h3>
+				<a href="/toeic/part1">Part 1 – Photographs</a>
+			</h3>
+        </section>
+
+        <section>
+            <h3>
+				<a href="/toeic/part2">Part 2 – Question-Response</a>
+			</h3>
+        </section>
+
+        <section>
+            <h3>
+				<a href="/toeic/part3">Part 3 – Conversations</a>
+			</h3>
+        </section>
+
+        <section>
+            <h3>
+				<a href="/toeic/part4">Part 4 – Talks</a>
+			</h3>
+        </section>
+
+        <section>
+            <h3>
+				<a href="/toeic/part5">Part 5 – Incomplete Sentences</a>
+			</h3>
+        </section>
+
+        <section>
+            <h3>
+				<a href="/toeic/part6">Part 6 – Text Completion</a>
+			</h3>
+        </section>
+
+        <section>
+            <h3>
+				<a href="/toeic/part7">Part 7 – Reading Comprehension</a>
+			</h3>
+        </section>
+    </main>
+
+</body>
+</html>

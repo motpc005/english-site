@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC Part 3 - Conversations</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/navigation.js}" defer></script>
+</head>
+<body>
+
+    <!-- Main Website Navigation -->
+    <div th:replace="~{fragments/header :: userHeader}"></div>
+
+    <!-- TOEIC Part Navigation -->
+    <div th:replace="~{fragments/toeicHeader :: toeicHeader}"></div>
+
+
+    <!-- Page Introduction -->
+    <header class="toeic-page-header">
+
+        <p class="page-label">TOEIC LISTENING & READING</p>
+
+        <h1>Part 3 – Conversations</h1>
+
+        <p>
+            Part 3 tests your ability to understand spoken conversations
+            between two or three speakers. Learn to identify the main
+            topic, follow the development of a conversation, recognize
+            important details and understand what speakers mean or
+            intend to do.
+        </p>
+
+        <div class="part-information">
+            <div class="part-information-item">
+                <strong>39</strong>
+                <span>Questions</span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="toeic-page">
+
+        <!-- Question Types -->
+        <section class="question-types-section">
+
+            <div class="section-heading">
+                <h2>Question Types</h2>
+                <p>
+                    Explore the different types of questions found in
+                    Part 3 and learn what information to listen for.
+                </p>
+            </div>
+
+
+            <!-- Main Idea and Context -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Main Idea and Context</h3>
+
+                    <p>
+                        Identify the main topic and purpose of a
+                        conversation, understand where it takes place
+                        and recognize the speakers and their roles.
+                    </p>
+
+                    <p class="question-pattern">
+                        Main topic, purpose, setting and speaker identity
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Details and Specific Information -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Details and Specific Information</h3>
+
+                    <p>
+                        Listen for specific facts, details and
+                        information mentioned during a conversation,
+                        including problems, reasons and important changes.
+                    </p>
+
+                    <p class="question-pattern">
+                        Who, what, when, where, problems and reasons
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Actions, Intentions and Inference -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Actions, Intentions and Inference</h3>
+
+                    <p>
+                        Understand what speakers want, suggest or intend
+                        to do, and recognize implied meanings that are
+                        not directly stated.
+                    </p>
+
+                    <p class="question-pattern">
+                        Requests, suggestions, next actions and implied meaning
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+
+            <!-- Graphic Questions -->
+            <article class="question-type-card">
+
+                <div class="question-type-content">
+                    <h3>Graphic Questions</h3>
+
+                    <p>
+                        Connect information from a conversation to
+                        a schedule, map, chart or table to identify
+                        the correct information.
+                    </p>
+
+                    <p class="question-pattern">
+                        Schedules, maps, charts and tables
+                    </p>
+                </div>
+
+                <div class="question-type-link">
+                    <span>Explore this topic</span>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Related Topics -->
+        <section class="related-topics-section">
+
+            <div class="section-heading">
+                <h2>Explore Related Topics</h2>
+
+                <p>
+                    Explore related grammar, vocabulary and
+                    pronunciation topics to improve your
+                    understanding of spoken English.
+                </p>
+            </div>
+
+            <div class="related-topic-links">
+
+                <div class="related-topic-card">
+                    <h3>Grammar</h3>
+
+                    <p>
+                        Sentence structures, verb forms, indirect
+                        language and expressions used in conversations.
+                    </p>
+
+                    <a href="/grammar">Explore Grammar</a>
+                </div>
+
+
+                <div class="related-topic-card">
+                    <h3>Vocabulary</h3>
+
+                    <p>
+                        Workplace expressions, everyday situations
+                        and common conversational phrases.
+                    </p>
+
+                    <a href="/vocabulary">Explore Vocabulary</a>
+                </div>
+
+
+                <div class="related-topic-card">
+                    <h3>Pronunciation / Natural Linking</h3>
+
+                    <p>
+                        Understand connected speech, reductions,
+                        contractions and natural speaking speed.
+                    </p>
+
+                    <a href="/linking">Explore Pronunciation</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Practice -->
+        <section class="practice-section">
+
+            <div class="section-heading">
+                <h2>Practice Part 3</h2>
+
+                <p>
+                    Apply what you have learned through
+                    TOEIC-style conversation listening exercises.
+                </p>
+            </div>
+
+            <div class="coming-soon">
+                <h3>Practice Materials Coming Soon</h3>
+
+                <p>
+                    Audio conversations, questions and detailed
+                    explanations will be available here in a future update.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Header</title>
+</head>
+
+<body>
+    <header th:fragment="adminHeader">
+        <h1>Admin Navigation</h1>
+		
+        <nav class="admin-nav">
+			<a href="/admin/vocabulary">Vocabulary</a>
+            <a href="/admin/grammar">Grammar</a>
+            <a href="/admin/linking">Pronunciation</a>
+        </nav>
+    </header>
+</body>
+
+</html>

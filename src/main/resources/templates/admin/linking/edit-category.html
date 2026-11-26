@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Linking Category</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+	<header>
+		<h1>Edit Linking Category</h1>
+	</header>
+
+	<main>
+		<section>
+			<form th:action="@{/admin/linking/categories/{id}/edit(id=${category.id})}" method="post">
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" th:value="${category.name}" required>
+				</div>
+
+				<div>
+					<label for="description">Description:</label>
+					<input type="text" id="description" name="description" th:value="${category.description}" required>
+				</div>
+
+				<div>
+					<label for="displayOrder">Display Order:</label>
+					<input type="number" id="displayOrder" name="displayOrder" th:value="${category.displayOrder}"
+						required>
+				</div>
+
+				<button type="submit">Save Changes</button>
+			</form>
+
+			<br>
+			<a class="button" th:href="@{/admin/linking}">Cancel</a>
+		</section>
+	</main>
+</body>
+
+</html>
